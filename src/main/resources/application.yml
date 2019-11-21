@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active:
+    - dbDao
+  servlet:
+    multipart:
+      max-file-size: 10MB
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
